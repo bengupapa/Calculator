@@ -1,0 +1,10 @@
+﻿@model Calculator.Models.CalculatorModel
+
+<div class="calcContainer">
+    <div class="screenContainer">
+        @Html.Partial("_Screen", Model.Screen)
+    </div>
+    <div class="buttonsContainer">
+       @Html.Partial("_Buttons", Model.ButtonGroups)
+    </div>
+</div>

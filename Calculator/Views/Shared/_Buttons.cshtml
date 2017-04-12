@@ -1,0 +1,15 @@
+﻿@model IEnumerable<Calculator.Models.ButtonsGroup>
+
+@{
+    foreach (var group in Model)
+    {
+        <div class="buttonsRow">
+            @foreach (var button in group.Buttons)
+            {
+                <div id="@button.ID" data-type="@button.Type" class="buttonContainer">
+                    <div class="button">@button.Text</div>
+                </div>
+            }
+        </div>
+    }
+}
